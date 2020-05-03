@@ -23,6 +23,18 @@ class App extends Component {
       ]
     });
   };
+
+  nameChangeHandler = (event) => {
+    // console.log('Was clicked!');
+    // DON'T DO THIS: this.state.persons[0].name = 'Maximilian';
+    this.setState({
+      persons: [
+        { name: 'Brijesh', age: 28 },
+        { name: event.target.value, age: 29 },
+        { name: 'Saurabh', age: 27 }
+      ]
+    });
+  };
   
   render() {
     return (
@@ -38,6 +50,7 @@ class App extends Component {
           name={this.state.persons[1].name}
           age={this.state.persons[1].age}
           click={this.switchNameHandler.bind(this, 'Nidhi')}
+          change={this.nameChangeHandler}
         >
           My Hobbies: Racing
         </Person>
