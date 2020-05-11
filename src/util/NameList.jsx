@@ -18,7 +18,7 @@ class NameList extends React.Component{
         return(
             <div>
                 <SearchName onSearch={this.onSearchHandler} searchedText={this.state.searchedText}></SearchName>
-                <Names values={this.props.names.filter(name => name.toLowerCase().includes(this.state.searchedText.toLowerCase()))}></Names>
+                <Names values={(this.props.names||[]).filter(name => name.toLowerCase().includes(this.state.searchedText.toLowerCase()))}></Names>
             </div>
 
         );

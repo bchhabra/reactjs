@@ -19,7 +19,7 @@ ReactDOM.render(
         <Banner />
     </Row>
     <Row>
-        <NameList names={['Brijesh','Brijmohan','Nilay', 'Anurag','Brijlal']} />
+        <NameList names={['Brijesh','Brijmohan','Nilay', 'Anurag','Hanuman']} />
     </Row>
 </Container>, document.getElementById('root'));
 registerServiceWorker();

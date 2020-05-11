@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Names = (props) => {
+const Names = ({values=[]}) => {
 
     return(
         <div>
             <ul>
-                {props.values.map(value => <li>{value}</li>)}
+                {values.map(value => <li>{value}</li>)}
             </ul>
         </div>
     );
