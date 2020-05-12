@@ -9,6 +9,7 @@ import Timer from './util/Timer';
 import Banner from './util/Banner';
 import MyPanel from './util/MyPanel';
 import NameList from './util/NameList';
+import LoginForm from './util/LoginForm';
 
 ReactDOM.render(
 <Container>
@@ -19,7 +20,7 @@ ReactDOM.render(
         <Banner />
     </Row>
     <Row>
-        <NameList names={['Brijesh','Brijmohan','Nilay', 'Anurag','Hanuman']} />
+        <LoginForm />
     </Row>
 </Container>, document.getElementById('root'));
 registerServiceWorker();
