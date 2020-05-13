@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "Black Blade",
+        "desc": "Black men's evening shirt",
+        "price": "50",
+        "imagepath": "images/01.jpg"
+    },
+    {
+
+        "id": "2",
+        "title": "White Blade",
+        "desc": "White men's morning shirt",
+        "price": "70",
+        "imagepath": "images/02.jpg"
+
+    },
+    {
+
+        "id": "3",
+        "title": "Orange Blade",
+        "desc": "Orange men's afternoon shirt",
+        "price": "80",
+        "imagepath": "images/03.jpg"
+    }
+]
