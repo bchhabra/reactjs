@@ -1,4 +1,6 @@
 import React from 'react'
+import Mybutton from './Mybutton'
+import MyInput from './MyInput'
 
 class Counter extends React.Component {
 
@@ -12,9 +14,9 @@ class Counter extends React.Component {
     render(){
         return(
             <div>
-                <button onClick={this.increase}>+</button> 
-                <input type="number" onChange={this.initialise} value={this.state.currentValue}/>
-                <button onClick={this.decrease}>-</button> 
+                <Mybutton onClick={this.increase}>+</Mybutton> 
+                <MyInput type="number" onChange={this.initialise} value={this.state.currentValue}/>
+                <Mybutton onClick={this.decrease}>-</Mybutton> 
             </div>
         )
         
