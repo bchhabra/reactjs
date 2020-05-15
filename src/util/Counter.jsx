@@ -21,9 +21,9 @@ class Counter extends React.Component {
         )
         
     }
-    initialise = (event) => {
-        this.setState({currentValue:parseInt(event.target.value)})
-        console.log("initialise value "+event.target.value)
+    initialise = (value) => {
+        this.setState({currentValue:parseInt(value)})
+        console.log("initialise value "+value)
     }
     increase = () => {
         const increasedValue=this.state.currentValue+1
