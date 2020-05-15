@@ -13,6 +13,7 @@ import LoginForm from './util/LoginForm';
 import productDetails from './util/products.json';
 import Catalog from './util/Catalog';
 import Counter from './util/Counter';
+import Product from './util/Product';
 
 ReactDOM.render(
 <Container>
@@ -23,7 +24,7 @@ ReactDOM.render(
         <Banner />
     </Row>
     <Row>
-        <Counter />
+        <Catalog products={productDetails} />
     </Row>
 </Container>, document.getElementById('root'));
 registerServiceWorker();

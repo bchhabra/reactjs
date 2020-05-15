@@ -13,15 +13,24 @@ class Catalog extends React.Component{
     render(){
         return(
             <div>
-                {this.props.products.map(product => <Product data={product} onSelection={this.addCartHandler}/>)}
-                <summary/>
+                {this.props.products.map(product => <Product data={product} onSelection={this.addCartHandler} selected={this.isSelected(product)}/>)}
+                <Summary totalPrice={this.calculateTotalPrice()} totalItem={this.state.selectedproducts.length}/>
             </div>
         );
     }
-    
+    isSelected = (product) => {
+        return this.state.selectedproducts.find(prod => prod.id == product.id)
+    }
+    calculateTotalPrice = () =>{
+        let totalPrice = 0
+        this.state.selectedproducts.forEach(product => {
+            totalPrice+=product.price   
+        })
+        return totalPrice
+    }
     addCartHandler = (product) => {
        const selectedproducts = this.state.selectedproducts;
-       selectedproducts.push(product)
+       selectedproducts.push(product) //.push is simple insert in list or an array.
        console.log(selectedproducts)
        this.setState({selectedproducts:selectedproducts})
     }
