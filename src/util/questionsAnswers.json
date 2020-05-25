@@ -1,0 +1,59 @@
+[
+    {   
+        "id": 1,
+        "text": "Q1. Are you a TAX payer aborad India?",
+        "options": [
+            {
+                "id": 1,
+                "text": "yes"
+            },
+            {
+                "id": 2,
+                "text": "no"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "Q2. Have you submitted IT for 2020?",
+        "options": [
+            {
+                "id": 1,
+                "text": "yes"
+            },
+            {
+                "id": 2,
+                "text": "no"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "Q3. Do you have a PAN?",
+        "options": [
+            {
+                "id": 1,
+                "text": "yes"
+            },
+            {
+                "id": 2,
+                "text": "no"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "text": "Q4. Did you learn something today?",
+        "options": [
+            {
+                "id": 1,
+                "text": "yes"
+            },
+            {
+                "id": 2,
+                "text": "no"
+            }
+        ]
+    }
+    
+]
