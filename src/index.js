@@ -16,6 +16,7 @@ import Counter from './util/Counter';
 import Product from './util/Product';
 import QuestionPanel from './util/QuestionPanel';
 import qadata from './util/questionsAnswers.json';
+import opdata from './util/selectedanswers.json';
 
 ReactDOM.render(
 <Container>
@@ -26,7 +27,7 @@ ReactDOM.render(
         <Banner />
     </Row>
     <Row>
-        <QuestionPanel data={qadata}/>
+        <QuestionPanel qdata={qadata} answers={opdata}/>
     </Row>
 </Container>, document.getElementById('root'));
 registerServiceWorker();
